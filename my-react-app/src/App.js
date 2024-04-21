@@ -51,12 +51,22 @@ function App() {
           generating facts. 
         </h2>
 
-        <p>Do you want to learn about cats? Generate facts.</p>
-        <button onClick={fetchCatFact}>Generate Cat Fact</button>
+        <p className="mb-2">Do you want to learn about cats? Generate facts.</p>
+        <button
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+          onClick={fetchCatFact}
+        >
+          Generate Cat Fact
+        </button>
         <p>{catFact}</p>
 
         <p>Do you want to learn about dogs? Generate facts.</p>
-        <button onClick={fetchDogFact}>Generate Dog Fact</button>
+        <button
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+          onClick={fetchDogFact}
+        >
+          Generate Dog Fact
+        </button>
         <p>{dogFact}</p>
 
       </header>
